@@ -10,33 +10,33 @@ int main() {
     double arr[1000];
     int i, len;
 
-    // 输入
-    printf("生成随机数中……\n");
+    // 杈撳叆
+    printf("鐢熸垚闅忔満鏁颁腑鈥︹�n");
     for (i = 0; i < 1000; i++) {
-       arr[i] = 0 + 1.0 * (rand() % RAND_MAX) / RAND_MAX * (1000 - -1000);	//设为RAND_MAX,随机效果更好;
+       arr[i] = 0 + 1.0 * (rand() % RAND_MAX) / RAND_MAX * (1000 - -1000);	//璁句负RAND_MAX,闅忔満鏁堟灉鏇村ソ;
     }
     len = 1000;
-    printf(" 选择排序算法 bubble insertion selection\n");
+    printf(" 閫夋嫨鎺掑簭绠楁硶 bubble insertion selection\n");
    
-    // 冒泡排序
+    // 鍐掓场鎺掑簭
     bubble_sort(arr, len);
-    printf("冒泡排序结果：\n");
+    printf("鍐掓场鎺掑簭缁撴灉锛歕n");
     for (i = 0; i < len; i++) {
         printf("%lf ", arr[i]);
     }
     printf("\n");
 
-    // 逐个插入排序
+    // 閫愪釜鎻掑叆鎺掑簭
     insertion_sort(arr, len);
-    printf("逐个插入排序结果：\n");
+    printf("閫愪釜鎻掑叆鎺掑簭缁撴灉锛歕n");
     for (i = 0; i < len; i++) {
         printf("%lf ", arr[i]);
     }
     printf("\n");
 
-    // 选择排序
+    // 閫夋嫨鎺掑簭
     selection_sort(arr, len);
-    printf("选择排序结果：\n");
+    printf("閫夋嫨鎺掑簭缁撴灉锛歕n");
     for (i = 0; i < len; i++) {
         printf("%lf", arr[i]);
     }
@@ -45,7 +45,7 @@ int main() {
     return 0;
 }
 
-// 冒泡排序
+// 鍐掓场鎺掑簭
 void bubble_sort(double arr[], int len) {
     int i, j;
     double temp;
@@ -60,7 +60,7 @@ void bubble_sort(double arr[], int len) {
     }
 }
 
- //逐个插入排序
+ //閫愪釜鎻掑叆鎺掑簭
 void insertion_sort(double arr[], int len) {
     int i, j;
     double temp;
@@ -73,7 +73,7 @@ void insertion_sort(double arr[], int len) {
     }
 }
 
-//// 选择排序
+//// 閫夋嫨鎺掑簭
 void selection_sort(double arr[], int len) {
     int i, j, min;
         double temp;
