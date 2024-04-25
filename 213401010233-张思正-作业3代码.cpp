@@ -51,7 +51,8 @@ int main() {
 
     return 0;
 }
-
+/*tamenshuojinwandeyesehenhao
+yinggaiyougerenpeiwolaisajiao*/
 // 冒泡排序
 
 void bubble_sort(double arr[], int len) {
