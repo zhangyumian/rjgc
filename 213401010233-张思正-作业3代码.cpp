@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include<time.h>
 #include<stdlib.h>
+#include<float.h>
+#include<string.h>
+#include<math.h>
+#include<stdbool.h>
 
 void bubble_sort(double arr[], int len);
 void insertion_sort(double arr[], int len);
@@ -19,6 +23,7 @@ int main() {
     printf(" 选择排序算法 bubble insertion selection\n");
    
     // 冒泡排序
+    
     bubble_sort(arr, len);
     printf("冒泡排序结果：\n");
     for (i = 0; i < len; i++) {
@@ -27,6 +32,7 @@ int main() {
     printf("\n");
 
     // 逐个插入排序
+    
     insertion_sort(arr, len);
     printf("逐个插入排序结果：\n");
     for (i = 0; i < len; i++) {
@@ -35,6 +41,7 @@ int main() {
     printf("\n");
 
     // 选择排序
+    
     selection_sort(arr, len);
     printf("选择排序结果：\n");
     for (i = 0; i < len; i++) {
@@ -46,6 +53,7 @@ int main() {
 }
 
 // 冒泡排序
+
 void bubble_sort(double arr[], int len) {
     int i, j;
     double temp;
@@ -61,6 +69,7 @@ void bubble_sort(double arr[], int len) {
 }
 
  //逐个插入排序
+
 void insertion_sort(double arr[], int len) {
     int i, j;
     double temp;
@@ -74,6 +83,7 @@ void insertion_sort(double arr[], int len) {
 }
 
 //// 选择排序
+
 void selection_sort(double arr[], int len) {
     int i, j, min;
         double temp;
